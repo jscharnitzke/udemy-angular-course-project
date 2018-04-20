@@ -9,6 +9,7 @@ import { RecipePanelComponent } from './recipe-panel/recipe-panel.component';
 import { RecipeListComponent } from './recipe-panel/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe-panel/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipe-panel/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RecipeItemComponent } from './recipe-panel/recipe-list/recipe-item/reci
     RecipePanelComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    ShoppingListEditComponent
   ],
   imports: [
     BrowserModule
