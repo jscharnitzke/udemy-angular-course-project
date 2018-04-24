@@ -4,10 +4,7 @@ import { EventEmitter } from '@angular/core';
 export class ShoppingListService {
     ingredientsChanged = new EventEmitter<Ingredient[]>();
 
-    ingredients: Ingredient[] = [
-        new Ingredient('Block of Cheese', 1),
-        new Ingredient('Bag of Elbow Noodles', 0.5)
-    ];
+    ingredients: Ingredient[] = [];
 
     getIngredients() { return [...this.ingredients]; }
 
