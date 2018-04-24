@@ -1,4 +1,4 @@
-import { Component, ViewChild, Output, EventEmitter, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Ingredient } from '../../shared/ingredient.model';
 import { ShoppingListService } from '../../services/shopping-list.service';
 
@@ -26,6 +26,6 @@ export class ShoppingListEditComponent {
             ingredientAmount
         );
 
-        this.shoppingListService.ingredientAdded.emit(newIngredient);
+        this.shoppingListService.addIngredient(newIngredient);
     }
 }
