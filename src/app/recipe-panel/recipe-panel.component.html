@@ -5,6 +5,11 @@
     </app-recipe-list>
   </div>
   <div class="col-md-7">
-    <app-recipe-detail [recipe]="selectedRecipe"></app-recipe-detail>
+    <app-recipe-detail 
+      *ngIf="selectedRecipe; else noRecipeDetails"
+      [recipe]="selectedRecipe"></app-recipe-detail>
+    <ng-template #noRecipeDetails>
+      <p>No Recipe Selected</p>
+    </ng-template>
   </div>
 </div>

@@ -7,11 +7,7 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipe-panel.component.scss']
 })
 export class RecipePanelComponent implements OnInit {
-  selectedRecipe: Recipe = {
-    name: '',
-    description: '',
-    imagePath: ''
-  };
+  selectedRecipe: Recipe;
 
   constructor() { }
 
