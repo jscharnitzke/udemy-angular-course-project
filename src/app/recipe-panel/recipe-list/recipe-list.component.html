@@ -9,7 +9,7 @@
     <app-recipe-item
       *ngFor="let recipe of recipes; index as i"
       [recipe]="recipe"
-      [routerLink]="['recipes', i]"
+      [routerLink]="[i]"
     >
     </app-recipe-item>
   </div>
