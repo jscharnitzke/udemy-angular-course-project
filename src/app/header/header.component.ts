@@ -6,15 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Output() navClick = new EventEmitter<string>();
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  navigateTo(link: string) {
-    this.navClick.emit(link);
-  }
-
+  ngOnInit() {}
 }
